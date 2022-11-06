@@ -5,7 +5,7 @@ This example will walk you through setting up a `Dark/Light mode switching` weba
 ![architecture](./architecture.jpg)
 
 ## Demo
-![darkmode-session-demo](./darkmode-session-demo.gif)
+[![darkmode-session-demo](./darkmode-session-demo.gif)](https://youtu.be/cOl2VFvpglY)
 
 ## Getting Started
 
