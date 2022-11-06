@@ -1,4 +1,4 @@
-# Darkmode from scratch
+# Dark/Light mode feature with a session from scratch
 This example will walk you through setting up a `Dark/Light mode switching` webapp with Redis as a session storage. You will understand the basic knowledge about manipulating sessions on [HTTP a stateless protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#HTTP_application_session).
 
 ## Architecture
