@@ -66,7 +66,7 @@ A [cookie](https://www.trendmicro.com/vinfo/us/security/definition/cookies#:~:te
     ~/Library/Application\ Support/Google/Chrome/<YOUR_PROFILE>/Cookies
     ```
 
-You can read the stored cookies in sqlite
+You can retrive the stored cookies through sqlite
 ```bash
 $ cp ~/Library/Application\ Support/Google/Chrome/Profile\ 5/Cookies .
 $ sqlite3 Cookies
