@@ -52,11 +52,11 @@ python app.py
 
 ## Cookies
 
-A cookie is a piece of data from a website that is stored within a web browser that the website can retrieve at a later time. Cookies are used to tell the server that users have returned to a particular website. [Cookies](https://www.trendmicro.com/vinfo/us/security/definition/cookies#:~:text=A%20cookie%20is%20a%20piece,returned%20to%20a%20particular%20website.)
+A [cookie](https://www.trendmicro.com/vinfo/us/security/definition/cookies#:~:text=A%20cookie%20is%20a%20piece,returned%20to%20a%20particular%20website.) is a piece of data from a website that is stored within a web browser that the website can retrieve at a later time. Cookies are used to tell the server that users have returned to a particular website.
 
 ![browser-cookies-session](./browser-cookies-session.png)
 
-### Where Are the cookies stored?
+### Where are the cookies actually stored on your local machine?
 - On [Windows](https://www.digitalcitizen.life/cookies-location-windows-10/)
     ```
     C:\Users\<YOUR_USER_NAME>\AppData\Local\Google\Chrome\User Data\Default
@@ -66,7 +66,7 @@ A cookie is a piece of data from a website that is stored within a web browser t
     ~/Library/Application\ Support/Google/Chrome/<YOUR_PROFILE>/Cookies
     ```
 
-You can read the stored Cookies
+You can read the stored cookies in sqlite
 ```bash
 $ cp ~/Library/Application\ Support/Google/Chrome/Profile\ 5/Cookies .
 $ sqlite3 Cookies
@@ -83,3 +83,4 @@ sqlite> select * from cookies;
 ## Reference
 - Flask Code: https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application
 - Flask Redis Session: https://flask-session.readthedocs.io/en/latest/
+- What is a Cookie: https://www.trendmicro.com/vinfo/us/security/definition/cookies
