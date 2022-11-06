@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<h1>{% block title %} Dark/Light Mode {% endblock %}</h1>
+
+{% block body %}
+<body class="{{ mode }}">
+    <div class="content">
+        <h2>Switch Dark/Light Mode</h2>
+        <div class="col">
+            <p>{{ utc_dt }}</p>
+            <div style="padding: 10px; margin: 10px">
+                {% for message in messages %}
+                <div>
+                    <p style="font-size: 20px">#{{ loop.index }}: {{ message }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <form method="post">
+            <input type="hidden" id="mode" name="switch" value="toggled">
+            <button onclick="switchFunction()" class="button">Switch</button>
+        </form>
+    </div>
+</body>
+{% endblock %}
