@@ -1,6 +1,7 @@
 # Darkmode from scratch
 
 ## Demo
+![darkmode-session-demo](./darkmode-session-demo.gif)
 
 ## Objective
 This code will walk you through setting up a `Dark/Light mode switching` webapp with Redis as a session storage. You will understand the basic knowledge about manipulating sessions on WebApp.
