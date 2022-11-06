@@ -16,7 +16,7 @@ app.config['PERMANENT_SESSION_LIFETIME'] = datetime.timedelta(minutes=5)
 server_session = Session(app)
 
 @app.route('/', methods=['GET', 'POST'])
-def set_color():
+def hello():
 
     # Dummy messages
     messages = ['Welcome',
