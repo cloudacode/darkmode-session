@@ -1,32 +1,35 @@
 # Darkmode from scratch
+This code will walk you through setting up a `Dark/Light mode switching` webapp with Redis as a session storage. You will understand the basic knowledge about manipulating sessions on [HTTP a stateless protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#HTTP_application_session).
+
+## Architecture
+![architecture](./architecture.jpg)
 
 ## Demo
 ![darkmode-session-demo](./darkmode-session-demo.gif)
 
-## Objective
-This code will walk you through setting up a `Dark/Light mode switching` webapp with Redis as a session storage. You will understand the basic knowledge about manipulating sessions on WebApp.
+## Getting Started
 
-## Setup environment
+### Setup environment
 ```
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Setup Redis (local)
+### Setup Redis (local)
 ```
 docker network create my-net
 docker run -p 6379:6379 --net my-net --name my-redis -d redis:latest
 docker run -it --net my-net --rm redis redis-cli -h my-redis
 ```
 
-## Run Flask Webapp (local)
+### Run Flask Webapp (local)
 ```
 # (local) run flask server
 python app.py
 ```
 
-## Verify the logic (Swtiching mode, Session)
+### Verify the logic (Swtiching mode, Session)
 
 - Open [http://127.0.0.1:8080](http://127.0.0.1:8080) on your browser
 - Click the button to switch dark/light mode
